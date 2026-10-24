@@ -18,11 +18,11 @@
     "description": "Compared Walmart, Target, and Whole Foods on protein, fat, and carbs per dollar across ~19,700 foods. The typical Walmart food gives 2–3× more of each nutrient per dollar than Whole Foods, though differences in product mix and package size mean the gap isn’t a like-for-like price comparison."
   },
   {
-    "title": "Placeholder Project 4",
-    "year": "2026",
-    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Placeholder description: replace this with a real summary of the project, what you built, and what you learned."
-  },
+  "title": "Predicting Explicit Songs from Spotify Audio Features",
+  "year": "2026",
+  "image": "../images/newplot (1).png",
+  "description": "Can a song's audio features reveal whether it's explicit? Using about 18,000 Spotify tracks across five genres (urban, metal, electronic, acoustic, latin), I explored how audio features like valence differ by genre, tested whether explicit tracks are more energetic, and tested whether tempo is missing at random. A random forest classifier reached a test F1 of about 0.64, up from 0.24 for a two-feature logistic regression baseline. A permutation-test fairness audit showed the model is significantly less precise on metal tracks than on other genres."
+},
   {
     "title": "Placeholder Project 5",
     "year": "2025",
