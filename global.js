@@ -104,13 +104,32 @@ export async function fetchJSON(url) {
     console.error('Error fetching or parsing JSON data:', error);
   }
 }
-export function renderProjects(projects, container, headingLevel = 'h2') {
-    containerElement.innerHTML = '';
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  // validate inputs
+  if (!(containerElement instanceof Element)) {
+    console.error('renderProjects: invalid container element');
+    return;
+  }
+  if (!/^h[1-6]$/i.test(headingLevel)) {
+    headingLevel = 'h2';
+  }
+
+  // clear old content so nothing is duplicated
+  containerElement.innerHTML = '';
+
+  // placeholder for empty or failed loads
+  if (!Array.isArray(projects) || projects.length === 0) {
+    containerElement.innerHTML = '<p>No projects to show yet.</p>';
+    return;
+  }
+
+  for (let project of projects) {
     const article = document.createElement('article');
     article.innerHTML = `
-    <h3>${project.title}</h3>
-    <img src="${project.image}" alt="${project.title}">
-    <p>${project.description}</p>
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <p>${project.description}</p>
     `;
     containerElement.appendChild(article);
+  }
 }
