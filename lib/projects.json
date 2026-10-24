@@ -2,8 +2,7 @@
 	{
 		"title": "TV Sitcom Data Analysis",
 		"image": "../images/friendspie.png",
-		"description": "Analyzed Friends episode, script, and sentiment datasets (7k+ lines, 10 seasons) using Python in Jupyter Notebook. Cleaned and transformed nested string fields to evaluate prolific writers/directors across 236 episodes.
-Applied bootstrapping and hypothesis testing to compare directors’ IMDb ratings and episode viewership with 99% confidence intervals. Conducted gender balance analysis on 6,500+ main-character lines, testing for significance in dialogue distribution. Implemented a 2-gram Markov text generator to create new, realistic episode titles based on existing episode titles."
+		"description": "Analyzed Friends episode, script, and sentiment datasets (7k+ lines, 10 seasons) using Python in Jupyter Notebook. Cleaned and transformed nested string fields to evaluate prolific writers/directors across 236 episodes. Applied bootstrapping and hypothesis testing to compare directors’ IMDb ratings and episode viewership with 99% confidence intervals. Conducted gender balance analysis on 6,500+ main-character lines, testing for significance in dialogue distribution. Implemented a 2-gram Markov text generator to create new, realistic episode titles based on existing episode titles."
 	},
 	{
 		"title": "Architecto minima sed omnis?",
