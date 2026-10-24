@@ -124,11 +124,6 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   }
 
   for (let project of projects) {
-    let image = project.image;
-    if (!image.startsWith('http')) {
-    image = BASE_PATH + image;
-  }
-    
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
@@ -137,4 +132,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     `;
     containerElement.appendChild(article);
   }
+}
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
 }
