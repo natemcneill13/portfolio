@@ -91,3 +91,26 @@ form?.addEventListener('submit', function (event) {
 
   location.href = form.action + '?' + params.join('&');
 });
+
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+export function renderProjects(projects, container, headingLevel = 'h2') {
+    containerElement.innerHTML = '';
+    const article = document.createElement('article');
+    article.innerHTML = `
+    <h3>${project.title}</h3>
+    <img src="${project.image}" alt="${project.title}">
+    <p>${project.description}</p>
+    `;
+    containerElement.appendChild(article);
+}
