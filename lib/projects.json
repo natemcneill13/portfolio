@@ -9,7 +9,7 @@
     "title": "TV Sitcom Data Analysis",
     "year": "2024",
     "image": "../images/friendspie.png",
-    "description": "Analyzed Friends episode, script, and sentiment datasets (7k+ lines, 10 seasons) using Python in Jupyter Notebook. Used bootstrapping and hypothesis testing on directors' IMDb ratings, analyzed gender balance across 6,500+ lines, and built a 2-gram Markov title generator (UCSD DSC 10)."
+    "description": "Analyzed Friends episode, script, and sentiment datasets (7k+ lines, 10 seasons) using Python in Jupyter Notebook. Used bootstrapping and hypothesis testing on directors' IMDb ratings, analyzed gender balance across 6,500+ lines, and built a 2-gram Markov title generator."
   },
   {
     "title": "GroceryDB Visualization",
